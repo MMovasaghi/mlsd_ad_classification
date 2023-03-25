@@ -1,0 +1,4 @@
+outs:
+- md5: 6638e80458805f3321398fb11d8128ec
+  size: 47375
+  path: res_1000.csv

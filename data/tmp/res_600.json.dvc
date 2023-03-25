@@ -1,0 +1,4 @@
+outs:
+- md5: ac0349c613d0bef71541f618b0af4719
+  size: 126464
+  path: res_600.json

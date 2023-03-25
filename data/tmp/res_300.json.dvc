@@ -1,0 +1,4 @@
+outs:
+- md5: 6257a24e08a2ad4e58505b6605ccfd38
+  size: 39040
+  path: res_300.json
