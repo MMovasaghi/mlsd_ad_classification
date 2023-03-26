@@ -1,0 +1,4 @@
+outs:
+- md5: d77fa7309f93cdf8f92d10c47a53f09c
+  size: 454
+  path: categories.csv
