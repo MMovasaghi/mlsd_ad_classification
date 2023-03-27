@@ -3,3 +3,4 @@
 /raw_data.csv
 /normalized_raw_data.csv
 /bert_em_normalized_raw_data.json
+/tfidf_em_normalized_raw_data.json
