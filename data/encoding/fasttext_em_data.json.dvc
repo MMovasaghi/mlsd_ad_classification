@@ -1,0 +1,4 @@
+outs:
+- md5: 9aa94c4f9c29146ca28f2e23469ee060
+  size: 20450509
+  path: fasttext_em_data.json

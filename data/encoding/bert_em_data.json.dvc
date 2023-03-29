@@ -1,0 +1,4 @@
+outs:
+- md5: a60d58966e7e6e2020b3c02508dec3d5
+  size: 47385854
+  path: bert_em_data.json
