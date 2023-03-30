@@ -1,0 +1,4 @@
+outs:
+- md5: 875f9686ebe061d7b25a4180805bcce0
+  size: 509069
+  path: ex4_autoencoder_data.csv
