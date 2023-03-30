@@ -2,6 +2,6 @@
 /urls.csv
 /raw_data.csv
 /normalized_raw_data.csv
-/bert_em_normalized_raw_data.json
-/tfidf_em_normalized_raw_data.json
-/fasttext_em_normalized_raw_data.json
+/downsample_psodu_raw_data.csv
+/downsample_cat1_raw_data.csv
+/upsample_cat1_raw_data.csv
