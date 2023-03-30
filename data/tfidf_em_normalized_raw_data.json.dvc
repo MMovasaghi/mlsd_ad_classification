@@ -1,4 +1,0 @@
-outs:
-- md5: 3c47dd70f9d24e2a0624330eb8c11ced
-  size: 143799768
-  path: tfidf_em_normalized_raw_data.json
