@@ -1,4 +1,4 @@
 outs:
-- md5: dff358ecd6190b447a4945229a4f637a
-  size: 1201413
+- md5: f61291712ef6132b759150d480793717
+  size: 1170564
   path: normalized_raw_data.csv
