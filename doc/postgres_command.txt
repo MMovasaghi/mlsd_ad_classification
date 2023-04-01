@@ -1,0 +1,15 @@
+docker pull postgres
+
+docker volume create postgresqldata
+
+docker pull dpage/pgadmin4
+
+docker run -d -v postgresqldata:/data/db -e POSTGRES_PASSWORD=postgres --name postgres -p 5432:5432 postgres
+
+docker run --name pgadmin -e "PGADMIN_DEFAULT_EMAIL=movasaghi@gmail.com" -e "PGADMIN_DEFAULT_PASSWORD=admin" -p 5050:80 -d dpage/pgadmin4
+
+docker network create --driver bridge pgnetwork
+
+docker network connect pgnetwork pgadmin
+
+docker network connect pgnetwork postgres

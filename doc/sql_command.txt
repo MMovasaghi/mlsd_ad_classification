@@ -1,0 +1,69 @@
+create table category(
+	id				serial not null,
+	title			varchar(255),
+	category_level	int default 1,
+	parent_id		int,
+	primary key (id),
+	foreign key (parent_id) references category(id) on update cascade on delete restrict
+);
+
+
+create table advertisement(
+	id				serial not null,
+	title			varchar(255),
+	sub_title		varchar(255),
+	description 	text,
+	url 			varchar(255),
+	price 			money,
+	primary key (id)
+);
+
+
+create table category_advertisement(
+	category_id			int not null,
+	advertisement_id	int not null,
+	primary key (category_id, advertisement_id),
+	foreign key (category_id) references category(id) on update cascade on delete restrict,
+	foreign key (advertisement_id) references advertisement(id) on update cascade on delete restrict
+);
+
+
+create table color(
+	id					serial not null,
+	title				varchar(255),
+	primary key (id)
+);
+
+
+create table cpu(
+	id					serial not null,
+	title				varchar(255),
+	description			varchar(255),
+	primary key (id)
+);
+
+
+create table ram(
+	id					serial not null,
+	amount				numeric,
+	ram_type			varchar(255),
+	primary key (id)
+);
+
+
+create table advertisement_detail(
+	id					serial not null,
+	size				int,
+	year				smallint,
+	room_number 		smallint,
+	mileage				int,
+	color_id 			int,
+	cpu_id				int,
+	ram_id				int,
+	advertisement_id	int,
+	primary key (id),
+	foreign key (advertisement_id) references advertisement(id) on update cascade on delete cascade,
+	foreign key (color_id) references color(id) on update cascade on delete restrict,
+	foreign key (cpu_id) references cpu(id) on update cascade on delete restrict,
+	foreign key (ram_id) references ram(id) on update cascade on delete restrict
+);

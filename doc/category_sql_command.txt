@@ -1,0 +1,25 @@
+INSERT INTO category (title, category_level) VALUES 
+('electronic-devices', 1), 
+('home-kitchen', 1),
+('real-estate', 1),
+('vehicles', 1);
+
+INSERT INTO category (title, category_level, parent_id) VALUES 
+('appliance', 2, 2),
+('auto', 2, 4),
+('buy-commercial-property', 2, 3),
+('buy-residential', 2, 3),
+('computers', 2, 1),
+('mobile-tablet', 2, 1),
+('motorcycles', 2, 4);
+
+INSERT INTO category (title, category_level, parent_id) VALUES 
+('buy-apartment', 3, 8),
+('buy-office', 3, 7),
+('buy-old-house', 3, 8),
+('buy-villa', 3, 8),
+('car', 3, 6),
+('laptop-notebook-macbook', 3, 9),
+('mobile-phones', 3, 10),
+('refrigerator-freezer', 3, 5),
+('washing-machines', 3, 5);
