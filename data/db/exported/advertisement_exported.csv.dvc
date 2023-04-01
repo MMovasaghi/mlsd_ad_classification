@@ -1,0 +1,4 @@
+outs:
+- md5: 60246d3e5b269e6cdd02a811084af3df
+  size: 1107530
+  path: advertisement_exported.csv

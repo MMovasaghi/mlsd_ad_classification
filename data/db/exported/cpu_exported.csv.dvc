@@ -1,0 +1,4 @@
+outs:
+- md5: f9bac345f02111d95e589cccd4d7bf56
+  size: 158
+  path: cpu_exported.csv

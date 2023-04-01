@@ -1,0 +1,4 @@
+outs:
+- md5: dac1d685ea411dd4c24aa281da582c97
+  size: 435
+  path: category_exported.csv
